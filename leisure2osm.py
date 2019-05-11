@@ -156,8 +156,8 @@ if __name__ == '__main__':
 
 	# Load tagging per facility type
 
-	filename = "anleggsregister_kategorier.json"
-	file = open(filename)
+	filename = "https://raw.githubusercontent.com/osmno/leisure2osm/master/anleggsregister_kategorier.json"
+	file = urllib2.urlopen(filename)
 	facility_tagging_data = json.load(file)
 	file.close()
 
