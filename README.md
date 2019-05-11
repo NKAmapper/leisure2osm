@@ -3,7 +3,7 @@ Extracts leisure facilities from [Anleggsregisteret](https://www.anleggsregister
 
 ### Usage
 
-<code>python leisure.py</code>
+<code>python leisure2osm.py</code>
 
 ### Notes
 
