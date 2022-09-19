@@ -1,5 +1,14 @@
 {
 
+  "Aktivitetspark": {
+    "Fleraktivitetsområde (aktivitetspark)": {
+      "leisure": "recreation_ground"
+    },
+    "Utendørs treningsanlegg": {
+      "leisure": "fitness_station"
+    }
+  },
+
   "Bueskytteranlegg":
     {
       "Bueskytterbane (ute)": {
@@ -80,8 +89,13 @@
         "amenity": "shelter",
         "shelter_type": "lean_to"
       },
+      "Lager- og garasjebygg for friluftslivsanlegg": {},
       "Overnattingshytte": {
         "tourism": "wilderness_hut"
+      },
+      "Turpadleanlegg": {
+        "landuse": "recreation_ground",
+        "sport": "canoe"
       },
       "Sikringshytte": {
         "amenity": "shelter",
@@ -104,6 +118,10 @@
         "leisure": "golf_course",
         "golf_course": "18_hole"
       },
+       "Golfhall": {
+        "leisure": "sports_centre",
+        "sport": "golf"
+      },     
       "Korthullsbane": {
         "leisure": "golf_course",
         "golf_course": "9-hole"
@@ -142,7 +160,14 @@
 
   "Hundesportanlegg":
     {
-      "Agilityhall": {},
+      "Agilityhall": {
+        "leisure": "sports_centre",
+        "sport": "dog_agility"        
+      },
+      "Agilityområde": {
+        "leisure": "pitch",
+        "sport": "dog_agility"
+      },
       "Hundekjøringsanlegg": {
         "leisure": "track",
         "sport": "dog_racing"
@@ -186,6 +211,9 @@
         "club": "sport"
       },
       "Lager- og garasjebygg": {},
+      "Sanitæranlegg (frittstående)": {
+        "amenity": "toilets"
+      },
       "Sanitærbygg": {
         "amenity": "toilets"
       }
@@ -244,6 +272,10 @@
       },
       "Klatre/buldrevegg (ute)": {
         "barrier": "wall",
+        "sport": "climbing"
+      },
+      "Klatrefører": {
+        "natural": "cliff",
         "sport": "climbing"
       },
       "Klatrehall": {
@@ -539,6 +571,7 @@
         "leisure": "pitch",
         "sport": "bmx"
       },
+      "Downhillsykkelløype": {},
       "Terrengsykkelløype": {},
       "Velodrom (inne)": {
         "leisure": "sports_centre",
