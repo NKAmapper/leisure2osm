@@ -1,21 +1,20 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- coding: utf8
 
 # leisure2osm
 # Converts Anleggsregisteret leisure facilities from JSON file to OSM format for import/update
-# Usage: python leisure.py [input_filename.json]
-# Loads data from Anleggsregisteret unless file name is given
-# Loads municipality and county data from Kartverket/Geonorge
+# Usage: python leisure.py
+# Loads municipality and county data from Kartverket/Geonorge + tagging scheme from Github
 
 
 import json
-import cgi
+import html
 import sys
-import urllib2
+import urllib.request
 import copy
 
 
-version = "0.3.0"
+version = "0.4.0"
 
 header = {
 	"X-Requested-With": "XMLHttpRequest",
@@ -28,7 +27,7 @@ transform_municipality = {
 	'Kautokeino': 'Guovdageaidnu-Kautok',
 	'Karasjok': 'Karasjohka-Karasjok',
 	'Nesseby': 'Unjargga-Nesseby',
-	u'Aurskog-Høland': u'Aurskog Høland'
+	'Aurskog-Høland': 'Aurskog Høland'
 }
 
 
@@ -40,13 +39,15 @@ def message (output_text):
 	sys.stdout.flush()
 
 
+
 # Produce a tag for OSM file
 
 def make_osm_line(key,value):
 
-    if value:
-		encoded_value = cgi.escape(value.encode('utf-8'),True)
+	if value:
+		encoded_value = html.escape(value).strip()
 		out_file.write ('    <tag k="%s" v="%s" />\n' % (key, encoded_value))
+
 
 
 # Output OSM tags for facility
@@ -64,6 +65,9 @@ def process_facility (facility):
 		latitude = facility['latitude']
 		longitude = facility['longitude']
 		message_text = ""
+
+		if facility['municipalityName'] == facility['municipalityName'].upper():
+			facility['municipalityName'] = facility['municipalityName'].title()
 
 		if not (latitude and longitude):
 			latitude = 0
@@ -137,7 +141,7 @@ def process_facility (facility):
 
 		if facility['typeDescription'] != "UDEFINERT":
 			if facility['typeDescription'] in facility_tagging:
-				for key,value in facility_tagging[ facility['typeDescription'] ].iteritems():
+				for key,value in iter(facility_tagging[ facility['typeDescription'] ].items()):
 					make_osm_line(key, value)
 			else:
 				message ("Facility type '%s' in category '%s' not defined\n" % (facility['typeDescription'], facility['categoryDescription']))
@@ -148,27 +152,29 @@ def process_facility (facility):
 		facilities_noshow += 1
 
 
+
 # Main program
 
 if __name__ == '__main__':
 
-	message ("\nLoading municipality data... ")
+	message ("\nLoading municipality boundaries... ")
 
 	# Load tagging per facility type
 
 	filename = "https://raw.githubusercontent.com/osmno/leisure2osm/master/anleggsregister_kategorier.json"
-	file = urllib2.urlopen(filename)
+	file = urllib.request.urlopen(filename)
+#	file = open("anleggsregister_kategorier.json")  # For testing
 	facility_tagging_data = json.load(file)
 	file.close()
 
 	facility_tagging = {}
-	for facility_category, facility_types in facility_tagging_data.iteritems():
-		for facility_type, facility_tags in facility_types.iteritems():
+	for facility_category, facility_types in iter(facility_tagging_data.items()):
+		for facility_type, facility_tags in iter(facility_types.items()):
 			facility_tagging[facility_type] = copy.deepcopy(facility_tags)
 
 	# Load municipality bounding boxes
 
-	file = urllib2.urlopen("https://ws.geonorge.no/kommuneinfo/v1/kommuner")
+	file = urllib.request.urlopen("https://ws.geonorge.no/kommuneinfo/v1/kommuner")
 	municipalities_data = json.load(file)
 	file.close()
 	municipalities = {}
@@ -176,8 +182,7 @@ if __name__ == '__main__':
 	for municipality in municipalities_data:
 
 		query = "https://ws.geonorge.no/kommuneinfo/v1/kommuner/%s" % municipality['kommunenummer']
-		request = urllib2.Request(query, headers=header)
-		file = urllib2.urlopen(request)
+		file = urllib.request.urlopen(query)
 		municipality_data = json.load(file)
 		file.close()
 
@@ -194,7 +199,7 @@ if __name__ == '__main__':
 			'longitude_max': -180.0
 		}
 
-		for node in municipality_data['avgrensningsboks']['coordinates'][0][1:]:
+		for node in municipality_data['avgrensningsboks']['coordinates'][0]:
 			bbox['latitude_max'] = max(bbox['latitude_max'], node[1])
 			bbox['latitude_min'] = min(bbox['latitude_min'], node[1])
 			bbox['longitude_max'] = max(bbox['longitude_max'], node[0])
@@ -210,7 +215,7 @@ if __name__ == '__main__':
 	out_file = open(out_filename, "w")
 
 	out_file.write ('<?xml version="1.0" encoding="UTF-8"?>\n')
-	out_file.write ('<osm version="0.6" generator="facility2osm v%s" upload="false">\n' % version)
+	out_file.write ('<osm version="0.6" generator="leisure2osm v%s" upload="false">\n' % version)
 
 	facilities_count = 0
 	facilities_ok = 0
@@ -228,8 +233,8 @@ if __name__ == '__main__':
 	while not last_page:
 
 		link = "https://fagsystem.anleggsregisteret.no/idrett/api/facilities?page=%i&size=500&" % page
-		request = urllib2.Request(link, headers=header)
-		file = urllib2.urlopen(request)
+		request = urllib.request.Request(link, headers=header)
+		file = urllib.request.urlopen(request)
 		facility_data = json.load(file)
 		file.close()
 
