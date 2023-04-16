@@ -294,8 +294,7 @@
         "amenity": "library"
       },
       "Flerbrukslokale for kultur": {
-        "amenity": "community_centre",
-        "community_centre": "cultural_centre"
+        "amenity": "community_centre"
       },
       "Galleri": {
         "tourism": "gallery"
