@@ -2,17 +2,17 @@
 
   "Aktivitetspark":
     {
-      "Ballareal": {
+      "Ballareal (aktivitetspark)": {
         "leisure": "pitch"
       },
-      "Curlingbane": {
+      "Curlingbane (ute)": {
         "leisure": "ice_rink",
         "sport": "curling"
       },
       "Fleraktivitetsområde (aktivitetspark)": {
         "leisure": "recreation_ground"
       },
-      "Skateområde": {
+      "Skateområde (aktivitetspark)": {
         "leisure": "pitch",
         "sport": "skateboard"
       },
