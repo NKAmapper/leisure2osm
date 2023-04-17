@@ -1,24 +1,25 @@
 {
 
-  "Aktivitetspark": {
-    "Ballareal": {
-      "leisure": "pitch"
+  "Aktivitetspark":
+    {
+      "Ballareal": {
+        "leisure": "pitch"
+      },
+      "Curlingbane": {
+        "leisure": "ice_rink",
+        "sport": "curling"
+      },
+      "Fleraktivitetsområde (aktivitetspark)": {
+        "leisure": "recreation_ground"
+      },
+      "Skateområde": {
+        "leisure": "pitch",
+        "sport": "skateboard"
+      },
+      "Utendørs treningsanlegg": {
+        "leisure": "fitness_station"
+      }
     },
-    "Curlingbane": {
-      "leisure": "ice_rink",
-      "sport": "curling"
-    },
-    "Fleraktivitetsområde (aktivitetspark)": {
-      "leisure": "recreation_ground"
-    },
-    "Skateområde": {
-      "leisure": "pitch",
-      "sport": "skateboard"
-    },
-    "Utendørs treningsanlegg": {
-      "leisure": "fitness_station"
-    }
-  },
 
   "Bueskytteranlegg":
     {
