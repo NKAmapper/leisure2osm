@@ -26,4 +26,4 @@ Extracts leisure facilities from [Anleggsregisteret](https://www.anleggsregister
 
 * [Anleggsregisteret.no](https://www.anleggsregisteret.no)
 * [OSM tagging per facility type](https://github.com/osmno/leisure2osm/blob/master/anleggsregister_kategorier.json)
-* [Folder with generated OSM file](https://drive.google.com/drive/folders/1nhxjciiwOOIWmTlmXsQp-4WoYwZlsGZ6?usp=sharing)
+* [Folder with generated OSM file](https://www.jottacloud.com/s/059f4e21889c60d4e4aaa64cc857322b134/list/Leisure)
