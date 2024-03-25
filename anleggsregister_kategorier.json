@@ -22,11 +22,11 @@
     },
     "Isflate": {
       "leisure": "pitch",
-      "sport": "skating"
+      "sport": "ice_skating"
     },
     "Mindre isflate (ute)": {
       "leisure": "pitch",
-      "sport": "skating"
+      "sport": "ice_skating"
     },
     "Skileikanlegg": {
       "piste:type": "playground"
@@ -252,11 +252,11 @@
     },
     "Hurtigløpsbane (ute)": {
       "leisure": "track",
-      "sport": "skating"
+      "sport": "ice_skating"
     },
     "Hurtigløpshall": {
       "leisure": "sports_centre",
-      "sport": "skating"
+      "sport": "ice_skating"
     },
     "Ishall": {
       "leisure": "ice_rink"
@@ -532,7 +532,8 @@
     },
     "Opplæringsbasseng (ute)": {
       "leisure": "swimming_pool",
-      "location": "outdoor"
+      "location": "outdoor",
+      "sport": "swimming"    
     },
     "Stupebasseng (inne)": {
       "leisure": "sports_centre",
