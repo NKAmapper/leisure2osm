@@ -1,587 +1,600 @@
 {
-  "Aktivitetspark": {
-    "Ballareal (aktivitetspark)": {
-      "leisure": "pitch"
+    "Aktivitetspark": {
+        "Ballareal (aktivitetspark)": {
+            "leisure": "pitch"
+        },
+        "Fleraktivitetsområde (aktivitetspark)": {
+            "leisure": "recreation_ground"
+        }
     },
-    "Fleraktivitetsområde (aktivitetspark)": {
-      "leisure": "recreation_ground"
+    "Anlegg for ballaktivitet": {
+        "Ballbinge/ballvegg": {
+            "leisure": "pitch",
+            "sport": "soccer"
+        },
+        "Minigolfbane": {
+            "leisure": "miniature_golf"
+        }
+    },
+    "Anlegg for vinteraktivitet": {
+        "Akebakke": {
+            "piste:type": "sled"
+        },
+        "Isflate": {
+            "leisure": "pitch",
+            "sport": "skating"
+        },
+        "Mindre hoppbakke": {
+            "piste:type": "ski_jump"
+        },
+        "Mindre isflate (ute)": {
+            "leisure": "pitch",
+            "sport": "skating"
+        },
+        "Skileikanlegg": {
+            "piste:type": "playground"
+        }
+    },
+    "Basketballanlegg": {
+        "Basketbane utendørs": {
+            "leisure": "pitch",
+            "sport": "basketball"
+        }
+    },
+    "Bueskytteranlegg": {
+        "Bueskytterbane (ute)": {
+            "leisure": "pitch",
+            "sport": "archery"
+        },
+        "Bueskytterhall": {
+            "leisure": "sports_centre",
+            "sport": "archery"
+        }
+    },
+    "Fotballanlegg": {
+        "Fotball treningsfelt": {
+            "leisure": "pitch",
+            "sport": "soccer"
+        },
+        "Fotballbane gress": {
+            "leisure": "pitch",
+            "sport": "soccer",
+            "surface": "grass"
+        },
+        "Fotballbane grus": {
+            "leisure": "pitch",
+            "sport": "soccer",
+            "surface": "compacted"
+        },
+        "Fotballbane kunstgress": {
+            "leisure": "pitch",
+            "sport": "soccer",
+            "surface": "artificial_turf"
+        },
+        "Fotballhall": {
+            "leisure": "sports_centre",
+            "sport": "soccer"
+        }
+    },
+    "Friidrettsanlegg": {
+        "Friidrett treningsanlegg (inne)": {
+            "leisure": "sports_centre",
+            "sport": "athletics"
+        },
+        "Friidrett treningsanlegg (ute)": {
+            "leisure": "pitch",
+            "sport": "athletics"
+        },
+        "Friidrettshall": {
+            "leisure": "sports_centre",
+            "sport": "athletics"
+        },
+        "Friidrettsstadion grus": {
+            "leisure": "track",
+            "surface": "compacted",
+            "sport": "athletics"
+        },
+        "Friidrettsstadion kunststoff": {
+            "leisure": "track",
+            "surface": "tartan",
+            "sport": "athletics"
+        },
+        "Friplassen": {}
+    },
+    "Friluftslivsanlegg": {
+        "Badeplass": {
+            "leisure": "swimming_area"
+        },
+        "Dagsturhytte": {
+            "amenity": "shelter",
+            "shelter_type": "basic_hut"
+        },
+        "Friluftsområde": {},
+        "Gapahuk": {
+            "amenity": "shelter",
+            "shelter_type": "lean_to"
+        },
+        "Klatrerute fjellvegg": {
+            "natural": "cliff",
+            "sport": "climbing"
+        },
+        "Lager- og garasjebygg for friluftslivsanlegg": {},
+        "Overnattingshytte": {
+            "tourism": "wilderness_hut"
+        },
+        "Sanitærbygg": {
+            "amenity": "toilets"
+        },
+        "Sikringshytte": {
+            "amenity": "shelter",
+            "shelter_type": "basic_hut"
+        },
+        "Småbåthavn": {
+            "leisure": "marina"
+        },
+        "Tur-/skiløype": {},
+        "Turløype/tursti/turvei": {},
+        "Turpadleanlegg": {
+            "landuse": "recreation_ground",
+            "sport": "canoe"
+        },
+        "Tursti": {},
+        "Turvei": {}
+    },
+    "Golfanlegg": {
+        "Driving range": {
+            "golf": "driving_range"
+        },
+        "Golfbane": {
+            "leisure": "golf_course",
+            "golf_course": "18_hole"
+        },
+        "Golfhall": {
+            "leisure": "sports_centre",
+            "sport": "golf"
+        },
+        "Korthullsbane": {
+            "leisure": "golf_course",
+            "golf_course": "9-hole"
+        }
+    },
+    "Hestesportanlegg": {
+        "Galoppbane": {
+            "leisure": "track",
+            "sport": "equestrian"
+        },
+        "Ridebane": {
+            "leisure": "pitch",
+            "sport": "equestrian"
+        },
+        "Ridehall": {
+            "leisure": "sports_centre",
+            "sport": "equestrian",
+            "building": "riding_hall"
+        },
+        "Ridesti": {
+            "leisure": "horse_riding"
+        },
+        "Stall": {
+            "building": "stable"
+        },
+        "Travbane": {
+            "leisure": "track",
+            "sport": "horse_racing"
+        }
+    },
+    "Hundesportanlegg": {
+        "Agilityhall": {
+            "leisure": "sports_centre",
+            "sport": "dog_agility"
+        },
+        "Agilityområde": {
+            "leisure": "pitch",
+            "sport": "dog_agility"
+        },
+        "Hundekjøringsanlegg": {
+            "leisure": "track",
+            "sport": "dog_racing"
+        }
+    },
+    "Idrettshaller og aktivitetssaler": {
+        "Biljardhall": {
+            "leisure": "sports_centre",
+            "sport": "billiards"
+        },
+        "Bowlinghall": {
+            "leisure": "bowling_alley"
+        },
+        "Danse-/cheerleadingssal": {
+            "leisure": "dance"
+        },
+        "Fleraktivitetssal": {
+            "leisure": "sports_centre",
+            "sport": "multi"
+        },
+        "Fleridrettshall": {
+            "leisure": "sports_centre",
+            "sport": "multi"
+        },
+        "Kampidrettsanlegg": {
+            "leisure": "sports_centre"
+        },
+        "Turnhall": {
+            "leisure": "sports_centre",
+            "sport": "gymnastics"
+        }
+    },
+    "Idrettshus og servicebygg": {
+        "Garderobebygg": {},
+        "Idrettshus": {
+            "amenity": "community_centre",
+            "club": "sport"
+        },
+        "Lager- og garasjebygg": {},
+        "Sanitæranlegg (frittstående)": {
+            "amenity": "toilets"
+        },
+        "Sanitæranlegg (integrert)": {
+            "amenity": "toilets"
+        }
+    },
+    "Is- og skøyteanlegg": {
+        "Bandybane (ute)": {
+            "leisure": "pitch",
+            "sport": "bandy"
+        },
+        "Bob-/skeleton-/akeanlegg": {
+            "ski:piste": "sled"
+        },
+        "Curlingbane (ute)": {
+            "leisure": "ice_rink",
+            "sport": "curling"
+        },
+        "Curlinghall": {
+            "leisure": "sports_centre",
+            "sport": "curling"
+        },
+        "Hurtigløpsbane (ute)": {
+            "leisure": "track",
+            "sport": "skating"
+        },
+        "Hurtigløpshall": {
+            "leisure": "sports_centre",
+            "sport": "skating"
+        },
+        "Ishall": {
+            "leisure": "ice_rink"
+        },
+        "Ishockeybane (ute)": {
+            "leisure": "ice_rink",
+            "sport": "ice_hockey"
+        }
+    },
+    "Kart": {
+        "Orienteringskart": {},
+        "Turkart": {}
+    },
+    "Klatreanlegg": {
+        "Klatre/buldrevegg (inne)": {
+            "leisure": "sports_centre",
+            "sport": "climbing"
+        },
+        "Klatrefører": {
+            "natural": "cliff",
+            "sport": "climbing"
+        },
+        "Klatrehall": {
+            "leisure": "sports_centre",
+            "sport": "climbing"
+        }
+    },
+    "Kulturarena": {
+        "Bibliotek": {
+            "amenity": "library"
+        },
+        "Flerbrukslokale for kultur": {
+            "amenity": "community_centre"
+        },
+        "Galleri": {
+            "tourism": "gallery"
+        },
+        "Kino": {
+            "amenity": "cinema"
+        },
+        "Konsertsal": {
+            "amenity": "concert_hall"
+        },
+        "Museum": {
+            "tourism": "museum"
+        },
+        "Produksjons- og øvelokaler": {},
+        "Regionalt kulturbygg": {
+            "amenity": "community_centre",
+            "community_centre": "cultural_centre"
+        },
+        "Scenekunstlokale": {
+            "amenity": "theatre"
+        },
+        "Utendørs kulturarena": {
+            "amenity": "theatre",
+            "theatre:type": "open_air"
+        }
+    },
+    "Luftsportanlegg": {
+        "Flyhangar": {
+            "aeroway": "hangar"
+        },
+        "Modellflyanlegg": {
+            "leisure": "pitch",
+            "sport": "model_aerodrome"
+        },
+        "Start- og landingsanlegg": {
+            "sport": "free_flying",
+            "free_flysing:site": "start"
+        }
+    },
+    "Mindre utendørsanlegg": {
+        "Anlegg for radiostyrt motorsport": {
+            "leisure": "pitch",
+            "sport": "rc_car"
+        },
+        "Ballbinge": {
+            "leisure": "pitch",
+            "sport": "soccer",
+            "surface": "artificial_turf"
+        },
+        "Baseballpitch": {
+            "leisure": "pitch",
+            "sport": "baseball"
+        },
+        "Cricketpitch": {
+            "leisure": "pitch",
+            "sport": "cricket"
+        },
+        "Discgolfbane": {
+            "leisure": "disc_golf_course"
+        },
+        "Diskgolfanlegg": {
+            "leisure": "disc_golf_course"
+        },
+        "Flerbruksflate": {},
+        "Flerbruksområde (ute)": {},
+        "Hinderløype": {
+            "leisure": "pitch",
+            "sport": "obstacle_course"
+        },
+        "Klatre/buldrevegg (ute)": {
+            "barrier": "wall",
+            "sport": "climbing"
+        },
+        "Liten balløkke/-bane": {
+            "leisure": "pitch",
+            "sport": "soccer"
+        },
+        "Nærmiljøkart": {},
+        "Parkouranlegg": {
+            "leisure": "pitch",
+            "sport": "obstacle_course"
+        },
+        "Petanquebane": {
+            "leisure": "pitch",
+            "sport": "boules",
+            "boules": "petanque"
+        },
+        "Rulleskøytebane": {
+            "leisure": "track",
+            "sport": "inline_skating"
+        },
+        "Sandhåndballbane": {
+            "leisure": "pitch",
+            "sport": "handball",
+            "surface": "sand"
+        },
+        "Sandvolleyballbane": {
+            "leisure": "pitch",
+            "sport": "beachvolleyball",
+            "surface": "sand"
+        },
+        "Sykkelanlegg": {},
+        "Trimpark": {
+            "leisure": "pitch",
+            "sport": "obstacle_course"
+        },
+        "Trimpark/styrkeapparater": {
+            "leisure": "fitness_station"
+        },
+        "Utendørs treningsanlegg": {
+            "leisure": "fitness_station"
+        }
+    },
+    "Motorsportanlegg": {
+        "Baneracing/roadracingbane": {
+            "highway": "raceway",
+            "sport": "motor"
+        },
+        "Bilcross/rallycrossbane": {
+            "highway": "raceway",
+            "sport": "motor"
+        },
+        "Gokartbane": {
+            "highway": "raceway",
+            "sport": "karting"
+        },
+        "Motocrossbane": {
+            "highway": "raceway",
+            "sport": "motocross"
+        },
+        "Snøscooterbane": {
+            "highway": "raceway",
+            "sport": "snowmobile"
+        },
+        "Speedway/longtrackbane": {
+            "highway": "raceway",
+            "sport": "motorcycle"
+        },
+        "Trial/enduroløype": {
+            "leisure": "pitch",
+            "sport": "motocross"
+        }
+    },
+    "Racketsportsanlegg": {
+        "Bordtennisbord (ute)": {
+            "leisure": "pitch",
+            "sport": "table_tennis"
+        },
+        "Bordtennishall": {
+            "leisure": "sports_centre",
+            "sport": "table_tennis"
+        },
+        "Padeltennisbane (ute)": {
+            "leisure": "pitch",
+            "sport": "paddle_tennis"
+        },
+        "Padeltennishall": {
+            "leisure": "sports_centre",
+            "sport": "paddle_tennis"
+        },
+        "Squashanlegg": {
+            "leisure": "sports_centre",
+            "sport": "squash"
+        },
+        "Tennisbane (ute)": {
+            "leisure": "pitch",
+            "sport": "tennis"
+        },
+        "Tennishall": {
+            "leisure": "sports_centre",
+            "sport": "tennis"
+        }
+    },
+    "Samiske idrettsanlegg": {
+        "Lassokastingsanlegg": {},
+        "Reinkappkjøringsanlegg": {}
+    },
+    "Skateanlegg": {
+        "Skateboard-/rulleanlegg": {
+            "leisure": "pitch",
+            "sport": "skateboard"
+        },
+        "Skatehall": {
+            "leisure": "sports_centre",
+            "sport": "skateboard"
+        },
+        "Skateområde (aktivitetspark)": {
+            "leisure": "pitch",
+            "sport": "skateboard"
+        },
+        "Skatepark": {
+            "leisure": "pitch",
+            "sport": "skateboard"
+        }
+    },
+    "Ski- og alpinanlegg": {
+        "Alpinbakke": {
+            "piste:type": "downhill"
+        },
+        "Freestyle- og snowboardanlegg": {
+            "piste:type": "snow_park"
+        },
+        "Hoppbakke": {
+            "piste:type": "ski_jump"
+        },
+        "Langrennsanlegg": {
+            "piste:type": "nordic"
+        },
+        "Skiskytteranlegg": {
+            "piste:type": "nordic",
+            "shooting": "range",
+            "sport": "biathlon"
+        }
+    },
+    "Skyteanlegg": {
+        "Feltskytebane (ute)": {
+            "leisure": "pitch",
+            "sport": "shooting"
+        },
+        "Lerduebane (ute)": {
+            "leisure": "pitch",
+            "sport": "shooting",
+            "shooting": "clay_pigeon"
+        },
+        "Pistolbane (ute)": {
+            "leisure": "pitch",
+            "sport": "shooting",
+            "shooting": "pistol"
+        },
+        "Riflebane (ute)": {
+            "leisure": "pitch",
+            "sport": "shooting",
+            "shooting": "rifle"
+        },
+        "Skytebane (inne)": {
+            "leisure": "sports_centre",
+            "sport": "shooting",
+            "shooting": "indoor_range"
+        },
+        "Viltmålbane (ute)": {
+            "leisure": "pitch",
+            "sport": "shooting",
+            "shooting": "rifle"
+        }
+    },
+    "Svømme- og stupeanlegg": {
+        "Opplæringsbasseng (inne)": {
+            "leisure": "sports_centre",
+            "sport": "swimming"
+        },
+        "Opplæringsbasseng (ute)": {
+            "leisure": "swimming_pool",
+            "location": "outdoor"
+        },
+        "Stupebasseng (inne)": {
+            "leisure": "sports_centre",
+            "sport": "diving"
+        },
+        "Stupebasseng (ute)": {
+            "man_made": "tower",
+            "tower:type": "diving",
+            "sport": "diving"
+        },
+        "Trenings-/konkurransebasseng (inne)": {
+            "leisure": "sports_centre",
+            "sport": "swimming"
+        },
+        "Trenings-/konkurransebasseng (ute)": {
+            "leisure": "swimming_pool",
+            "location": "outdoor",
+            "sport": "swimming"
+        }
+    },
+    "Sykkelanlegg": {
+        "BMX-anlegg": {
+            "leisure": "pitch",
+            "sport": "bmx"
+        },
+        "Downhillsykkelløype": {},
+        "Pumptrack": {
+            "leisure": "pitch",
+            "sport": "cycling"
+        },
+        "Terrengsykkelløype": {},
+        "Velodrom (inne)": {
+            "leisure": "sports_centre",
+            "sport": "cycling",
+            "cycling": "track_cycling"
+        },
+        "Velodrom (ute)": {
+            "leisure": "track",
+            "sport": "cycling",
+            "cycling": "track_cycling"
+        }
+    },
+    "Vannsportanlegg": {
+        "Båthus": {},
+        "Båtsportanlegg": {},
+        "Castinganlegg": {},
+        "Ro-/padleanlegg": {},
+        "Seilanlegg": {},
+        "Vannskianlegg": {}
     }
-  },
-  "Anlegg for ballaktivitet": {
-    "Ballbinge/ballvegg": {
-      "leisure": "pitch",
-      "sport": "soccer"
-    },
-    "Minigolfbane": {
-      "leisure": "miniature_golf"
-    }
-  },
-  "Anlegg for vinteraktivitet": {
-    "Akebakke": {
-      "piste:type": "sled"
-    },
-    "Isflate": {
-      "leisure": "pitch",
-      "sport": "ice_skating"
-    },
-    "Mindre isflate (ute)": {
-      "leisure": "pitch",
-      "sport": "ice_skating"
-    },
-    "Skileikanlegg": {
-      "piste:type": "playground"
-    }
-  },
-  "Basketballanlegg": {
-    "Basketbane utendørs": {
-      "leisure": "pitch",
-      "sport": "basketball"
-    }
-  },
-  "Bueskytteranlegg": {
-    "Bueskytterbane (ute)": {
-      "leisure": "pitch",
-      "sport": "archery"
-    },
-    "Bueskytterhall": {
-      "leisure": "sports_centre",
-      "sport": "archery"
-    }
-  },
-  "Fotballanlegg": {
-    "Fotball treningsfelt": {
-      "leisure": "pitch",
-      "sport": "soccer"
-    },
-    "Fotballbane gress": {
-      "leisure": "pitch",
-      "sport": "soccer",
-      "surface": "grass"
-    },
-    "Fotballbane grus": {
-      "leisure": "pitch",
-      "sport": "soccer",
-      "surface": "compacted"
-    },
-    "Fotballbane kunstgress": {
-      "leisure": "pitch",
-      "sport": "soccer",
-      "surface": "artificial_turf"
-    },
-    "Fotballhall": {
-      "leisure": "sports_centre",
-      "sport": "soccer"
-    }
-  },
-  "Friidrettsanlegg": {
-    "Friidrett treningsanlegg (inne)": {
-      "leisure": "sports_centre",
-      "sport": "athletics"
-    },
-    "Friidrett treningsanlegg (ute)": {
-      "leisure": "pitch",
-      "sport": "athletics"
-    },
-    "Friidrettshall": {
-      "leisure": "sports_centre",
-      "sport": "athletics"
-    },
-    "Friidrettsstadion grus": {
-      "leisure": "track",
-      "surface": "compacted",
-      "sport": "athletics"
-    },
-    "Friidrettsstadion kunststoff": {
-      "leisure": "track",
-      "surface": "tartan",
-      "sport": "athletics"
-    },
-    "Friplassen": {}
-  },
-  "Friluftslivsanlegg": {
-    "Badeplass": {
-      "leisure": "swimming_area"
-    },
-    "Dagsturhytte": {
-      "amenity": "shelter",
-      "shelter_type": "basic_hut"
-    },
-    "Friluftsområde": {},
-    "Gapahuk": {
-      "amenity": "shelter",
-      "shelter_type": "lean_to"
-    },
-    "Klatrerute fjellvegg": {
-      "natural": "cliff",
-      "sport": "climbing"
-    },
-    "Lager- og garasjebygg for friluftslivsanlegg": {},
-    "Overnattingshytte": {
-      "tourism": "wilderness_hut"
-    },
-    "Sanitærbygg": {
-      "amenity": "toilets"
-    },
-    "Sikringshytte": {
-      "amenity": "shelter",
-      "shelter_type": "basic_hut"
-    },
-    "Småbåthavn": {
-      "leisure": "marina"
-    },
-    "Tur-/skiløype": {},
-    "Turpadleanlegg": {
-      "landuse": "recreation_ground",
-      "sport": "canoe"
-    },
-    "Tursti": {},
-    "Turvei": {}
-  },
-  "Golfanlegg": {
-    "Driving range": {
-      "golf": "driving_range"
-    },
-    "Golfbane": {
-      "leisure": "golf_course",
-      "golf_course": "18_hole"
-    },
-    "Golfhall": {
-      "leisure": "sports_centre",
-      "sport": "golf"
-    },
-    "Korthullsbane": {
-      "leisure": "golf_course",
-      "golf_course": "9-hole"
-    }
-  },
-  "Hestesportanlegg": {
-    "Galoppbane": {
-      "leisure": "track",
-      "sport": "equestrian"
-    },
-    "Ridebane": {
-      "leisure": "pitch",
-      "sport": "equestrian"
-    },
-    "Ridehall": {
-      "leisure": "sports_centre",
-      "sport": "equestrian",
-      "building": "riding_hall"
-    },
-    "Ridesti": {
-      "leisure": "horse_riding"
-    },
-    "Stall": {
-      "building": "stable"
-    },
-    "Travbane": {
-      "leisure": "track",
-      "sport": "horse_racing"
-    }
-  },
-  "Hundesportanlegg": {
-    "Agilityhall": {
-      "leisure": "sports_centre",
-      "sport": "dog_agility"
-    },
-    "Agilityområde": {
-      "leisure": "pitch",
-      "sport": "dog_agility"
-    },
-    "Hundekjøringsanlegg": {
-      "leisure": "track",
-      "sport": "dog_racing"
-    }
-  },
-  "Idrettshaller og aktivitetssaler": {
-    "Biljardhall": {
-      "leisure": "sports_centre",
-      "sport": "billiards"
-    },
-    "Bowlinghall": {
-      "leisure": "bowling_alley"
-    },
-    "Danse-/cheerleadingssal": {
-      "leisure": "dance"
-    },
-    "Fleraktivitetssal": {
-      "leisure": "sports_centre",
-      "sport": "multi"
-    },
-    "Fleridrettshall": {
-      "leisure": "sports_centre",
-      "sport": "multi"
-    },
-    "Kampidrettsanlegg": {
-      "leisure": "sports_centre"
-    },
-    "Turnhall": {
-      "leisure": "sports_centre",
-      "sport": "gymnastics"
-    }
-  },
-  "Idrettshus og servicebygg": {
-    "Garderobebygg": {},
-    "Idrettshus": {
-      "amenity": "community_centre",
-      "club": "sport"
-    },
-    "Lager- og garasjebygg": {},
-    "Sanitæranlegg (frittstående)": {
-      "amenity": "toilets"
-    },
-    "Sanitæranlegg (integrert)": {
-      "amenity": "toilets"
-    }
-  },
-  "Is- og skøyteanlegg": {
-    "Bandybane (ute)": {
-      "leisure": "pitch",
-      "sport": "bandy"
-    },
-    "Bob-/skeleton-/akeanlegg": {
-      "ski:piste": "sled"
-    },
-    "Curlingbane (ute)": {
-      "leisure": "ice_rink",
-      "sport": "curling"
-    },
-    "Curlinghall": {
-      "leisure": "sports_centre",
-      "sport": "curling"
-    },
-    "Hurtigløpsbane (ute)": {
-      "leisure": "track",
-      "sport": "ice_skating"
-    },
-    "Hurtigløpshall": {
-      "leisure": "sports_centre",
-      "sport": "ice_skating"
-    },
-    "Ishall": {
-      "leisure": "ice_rink"
-    },
-    "Ishockeybane (ute)": {
-      "leisure": "ice_rink",
-      "sport": "ice_hockey"
-    }
-  },
-  "Kart": {
-    "Nærmiljøkart": {},
-    "Orienteringskart": {},
-    "Turkart": {}
-  },
-  "Klatreanlegg": {
-    "Klatre/buldrevegg (inne)": {
-      "leisure": "sports_centre",
-      "sport": "climbing"
-    },
-    "Klatrefører": {
-      "natural": "cliff",
-      "sport": "climbing"
-    },
-    "Klatrehall": {
-      "leisure": "sports_centre",
-      "sport": "climbing"
-    }
-  },
-  "Kulturarena": {
-    "Bibliotek": {
-      "amenity": "library"
-    },
-    "Flerbrukslokale for kultur": {
-      "amenity": "community_centre"
-    },
-    "Galleri": {
-      "tourism": "gallery"
-    },
-    "Kino": {
-      "amenity": "cinema"
-    },
-    "Konsertsal": {
-      "amenity": "concert_hall"
-    },
-    "Museum": {
-      "tourism": "museum"
-    },
-    "Produksjons- og øvelokaler": {},
-    "Regionalt kulturbygg": {
-      "amenity": "community_centre",
-      "community_centre": "cultural_centre"
-    },
-    "Scenekunstlokale": {
-      "amenity": "theatre"
-    },
-    "Utendørs kulturarena": {
-      "amenity": "theatre",
-      "theatre:type": "open_air"
-    }
-  },
-  "Luftsportanlegg": {
-    "Flyhangar": {
-      "aeroway": "hangar"
-    },
-    "Modellflyanlegg": {
-      "leisure": "pitch",
-      "sport": "model_aerodrome"
-    },
-    "Start- og landingsanlegg": {
-      "sport": "free_flying",
-      "free_flysing:site": "start"
-    }
-  },
-  "Mindre utendørsanlegg": {
-    "Anlegg for radiostyrt motorsport": {
-      "leisure": "pitch",
-      "sport": "rc_car"
-    },
-    "Ballbinge": {
-      "leisure": "pitch",
-      "sport": "soccer",
-      "surface": "artificial_turf"
-    },
-    "Baseballpitch": {
-      "leisure": "pitch",
-      "sport": "baseball"
-    },
-    "Cricketpitch": {
-      "leisure": "pitch",
-      "sport": "cricket"
-    },
-    "Diskgolfanlegg": {
-      "leisure": "disc_golf_course"
-    },
-    "Flerbruksflate": {},
-    "Flerbruksområde (ute)": {},
-    "Hinderløype": {
-      "leisure": "pitch",
-      "sport": "obstacle_course"
-    },
-    "Klatre/buldrevegg (ute)": {
-      "barrier": "wall",
-      "sport": "climbing"
-    },
-    "Liten balløkke/-bane": {
-      "leisure": "pitch",
-      "sport": "soccer"
-    },
-    "Parkouranlegg": {
-      "leisure": "pitch",
-      "sport": "obstacle_course"
-    },
-    "Petanquebane": {
-      "leisure": "pitch",
-      "sport": "boules",
-      "boules": "petanque"
-    },
-    "Rulleskøytebane": {
-      "leisure": "track",
-      "sport": "inline_skating"
-    },
-    "Sandhåndballbane": {
-      "leisure": "pitch",
-      "sport": "handball",
-      "surface": "sand"
-    },
-    "Sandvolleyballbane": {
-      "leisure": "pitch",
-      "sport": "beachvolleyball",
-      "surface": "sand"
-    },
-    "Sykkelanlegg": {},
-    "Trimpark": {
-      "leisure": "pitch",
-      "sport": "obstacle_course"
-    },
-    "Utendørs treningsanlegg": {
-      "leisure": "fitness_station"
-    }
-  },
-  "Motorsportanlegg": {
-    "Baneracing/roadracingbane": {
-      "highway": "raceway",
-      "sport": "motor"
-    },
-    "Bilcross/rallycrossbane": {
-      "highway": "raceway",
-      "sport": "motor"
-    },
-    "Gokartbane": {
-      "highway": "raceway",
-      "sport": "karting"
-    },
-    "Motocrossbane": {
-      "highway": "raceway",
-      "sport": "motocross"
-    },
-    "Snøscooterbane": {
-      "highway": "raceway",
-      "sport": "snowmobile"
-    },
-    "Speedway/longtrackbane": {
-      "highway": "raceway",
-      "sport": "motorcycle"
-    },
-    "Trial/enduroløype": {
-      "leisure": "pitch",
-      "sport": "motocross"
-    }
-  },
-  "Racketsportsanlegg": {
-    "Bordtennisbord (ute)": {
-      "leisure": "pitch",
-      "sport": "table_tennis"
-    },
-    "Bordtennishall": {
-      "leisure": "sports_centre",
-      "sport": "table_tennis"
-    },
-    "Padeltennisbane (ute)": {
-      "leisure": "pitch",
-      "sport": "paddle_tennis"
-    },
-    "Squashanlegg": {
-      "leisure": "sports_centre",
-      "sport": "squash"
-    },
-    "Tennisbane (ute)": {
-      "leisure": "pitch",
-      "sport": "tennis"
-    },
-    "Tennishall": {
-      "leisure": "sports_centre",
-      "sport": "tennis"
-    }
-  },
-  "Samiske idrettsanlegg": {
-    "Lassokastingsanlegg": {},
-    "Reinkappkjøringsanlegg": {}
-  },
-  "Skateanlegg": {
-    "Skateboard-/rulleanlegg": {
-      "leisure": "pitch",
-      "sport": "skateboard"
-    },
-    "Skatehall": {
-      "leisure": "sports_centre",
-      "sport": "skateboard"
-    },
-    "Skateområde (aktivitetspark)": {
-      "leisure": "pitch",
-      "sport": "skateboard"
-    },
-    "Skatepark": {
-      "leisure": "pitch",
-      "sport": "skateboard"
-    }
-  },
-  "Ski- og alpinanlegg": {
-    "Alpinbakke": {
-      "piste:type": "downhill"
-    },
-    "Freestyle- og snowboardanlegg": {
-      "piste:type": "snow_park"
-    },
-    "Hoppbakke": {
-      "piste:type": "ski_jump"
-    },
-    "Langrennsanlegg": {
-      "piste:type": "nordic"
-    },
-    "Skiskytteranlegg": {
-      "piste:type": "nordic",
-      "shooting": "range",
-      "sport": "biathlon"
-    }
-  },
-  "Skyteanlegg": {
-    "Feltskytebane (ute)": {
-      "leisure": "pitch",
-      "sport": "shooting"
-    },
-    "Lerduebane (ute)": {
-      "leisure": "pitch",
-      "sport": "shooting",
-      "shooting": "clay_pigeon"
-    },
-    "Pistolbane (ute)": {
-      "leisure": "pitch",
-      "sport": "shooting",
-      "shooting": "pistol"
-    },
-    "Riflebane (ute)": {
-      "leisure": "pitch",
-      "sport": "shooting",
-      "shooting": "rifle"
-    },
-    "Skytebane (inne)": {
-      "leisure": "sports_centre",
-      "sport": "shooting",
-      "shooting": "indoor_range"
-    },
-    "Viltmålbane (ute)": {
-      "leisure": "pitch",
-      "sport": "shooting",
-      "shooting": "rifle"
-    }
-  },
-  "Svømme- og stupeanlegg": {
-    "Opplæringsbasseng (inne)": {
-      "leisure": "sports_centre",
-      "sport": "swimming"
-    },
-    "Opplæringsbasseng (ute)": {
-      "leisure": "swimming_pool",
-      "location": "outdoor",
-      "sport": "swimming"    
-    },
-    "Stupebasseng (inne)": {
-      "leisure": "sports_centre",
-      "sport": "diving"
-    },
-    "Stupebasseng (ute)": {
-      "man_made": "tower",
-      "tower:type": "diving",
-      "sport": "diving"
-    },
-    "Trenings-/konkurransebasseng (inne)": {
-      "leisure": "sports_centre",
-      "sport": "swimming"
-    },
-    "Trenings-/konkurransebasseng (ute)": {
-      "leisure": "swimming_pool",
-      "location": "outdoor",
-      "sport": "swimming"
-    }
-  },
-  "Sykkelanlegg": {
-    "BMX-anlegg": {
-      "leisure": "pitch",
-      "sport": "bmx"
-    },
-    "Downhillsykkelløype": {},
-    "Pumptrack": {
-      "leisure": "pitch",
-      "sport": "cycling"
-    },
-    "Terrengsykkelløype": {},
-    "Velodrom (inne)": {
-      "leisure": "sports_centre",
-      "sport": "cycling",
-      "cycling": "track_cycling"
-    },
-    "Velodrom (ute)": {
-      "leisure": "track",
-      "sport": "cycling",
-      "cycling": "track_cycling"
-    }
-  },
-  "Vannsportanlegg": {
-    "Båthus": {},
-    "Båtsportanlegg": {},
-    "Castinganlegg": {},
-    "Ro-/padleanlegg": {},
-    "Seilanlegg": {},
-    "Vannskianlegg": {}
-  }
 }
