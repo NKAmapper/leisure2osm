@@ -82,7 +82,7 @@
             "sport": "athletics"
         },
         "Friidrett treningsanlegg (ute)": {
-            "leisure": "pitch",
+            "leisure": "track",
             "sport": "athletics"
         },
         "Friidrettshall": {
@@ -99,7 +99,11 @@
             "surface": "tartan",
             "sport": "athletics"
         },
-        "Friplassen": {}
+        "Friplassen": {
+            "leisure": "track",
+            "surface": "tartan",
+            "sport": "athletics"
+        },
     },
     "Friluftslivsanlegg": {
         "Badeplass": {
